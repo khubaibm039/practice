@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive</title>
+    <style>
+      body {
+        max-width: 1440px;
+        margin: 0 auto;
+      }
+      .div-container {
+        display: flex;
+        gap: 10px;
+      }
+      .para2,
+      .para1 {
+        background-color: aquamarine;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 50% 0;
+        border-radius: 20px;
+        width: 100%;
+      }
+      .para-container {
+        width: 50%;
+      }
+      @media screen and (max-width: 576px) {
+        .div-container {
+          flex-direction: column;
+        }
+        .para-container {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="div-container">
+      <div class="para-container">
+        <div><p class="para1">left</p></div>
+      </div>
+      <div class="para-container">
+        <div><p class="para2">right</p></div>
+      </div>
+    </main>
+  </body>
+</html>
