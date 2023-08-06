@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design Layout I</title>
+    <style>
+      body {
+        max-width: 1440px;
+        margin: 0 auto;
+      }
+      main img {
+        max-width: 100%;
+      }
+      main div {
+        justify-content: center;
+        align-items: center;
+      }
+      .image-container {
+        width: 35%;
+      }
+      .title-para {
+        width: 35%;
+      }
+      .container {
+        display: flex;
+      }
+      @media only screen and (max-width: 768px) {
+        .container2 {
+          flex-direction: column;
+        }
+        .reverse-column {
+          flex-direction: column-reverse;
+        }
+        img {
+          width: 100%;
+        }
+      }
+      h3,
+      p {
+        margin: 10px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div>
+        <section>
+          <div class="container container2">
+            <div class="image-container">
+              <img src="images/photo-1477959858617-67f85cf4f1df.jpg" alt="" />
+            </div>
+            <div class="title-para">
+              <h3>Why do we use it</h3>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Excepturi quo officiis maxime, odit, voluptatum dicta esse
+                quibusdam neque reprehenderit laudantium asperiores, deleniti
+                tenetur expedita delectus quod magnam.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="">
+          <div class="container reverse-column">
+            <div class="title-para">
+              <h3>Why do we use it</h3>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Excepturi quo officiis maxime, odit, voluptatum dicta esse
+                quibusdam neque reprehenderit laudantium asperiores, deleniti
+                tenetur expedita delectus quod magnam. Aspernatur, rem a. Lorem
+              </p>
+            </div>
+            <div class="image-container">
+              <img src="images/photo-1477959858617-67f85cf4f1df.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
