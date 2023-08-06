@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adapt Image</title>
+    <style>
+      /* body {
+        max-width: 1440px;
+        margin: 0 auto;
+      } */
+      .image-container {
+        display: flex;
+      }
+      .image-container div {
+        width: 100%;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      @media screen and (max-width: 576px) {
+        .image-container div {
+          width: 390px;
+          height: 844px;
+          border: 1px solid black;
+          image-rendering: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h1>Adapt Image</h1> -->
+    <div class="">
+      <main class="image-container">
+        <div>
+          <img src="images/302253-Nezuko-Cute-Kimetsu-no-Yaiba-4K.jpg" alt="" />
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
