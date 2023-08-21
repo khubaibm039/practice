@@ -10,4 +10,7 @@ switch (signal) {
   case 'green':
     console.log('you can cross the road');
     break;
+  default:
+    console.log('Look everywhere then cross the road');
+    break;
 }
