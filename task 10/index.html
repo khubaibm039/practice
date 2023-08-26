@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Functional Baap Er Bank</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <h1 class="text-center text-5xl mt-5">Functional <span class="text-red-600">Baap-Er-bank</span>!!!</h1>
+
+  <main>
+    <section class="mt-8">
+      <div class="grid grid-cols-3 w-3/4 gap-8  mx-auto text-white">
+        <div class="bg-yellow-400 p-8 rounded-lg">
+          <h4 class="text-3xl">Depsite</h4>
+          <h2 class="text-5xl">$<span id="deposite-total">00</span></h2>
+        </div>
+        <div class="bg-red-400 p-8 rounded-lg">
+          <h4 class="text-3xl">Withdraw</h4>
+          <h2 class="text-5xl">$<span id="withdraw-total">00</span></h2>
+        </div>
+        <div class="bg-blue-400 p-8 rounded-lg">
+          <h4 class="text-3xl">Balance</h4>
+          <h2 class="text-5xl">$<span id="total-balance">1200</span></h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- depsite and withdraw section -->
+    <section class="mt-8 w-3/4 mx-auto">
+      <div class="grid grid-cols-2 gap-4">
+        <div class="bg-violet-400 p-8 rounded-lg text-white ">
+          <h3 class="text-4xl">Your Depsite</h3>
+          <input type="text" id="depsite-field" placeholder="Amount you want to depsite"
+            class="p-2 w-3/4 rounded-md mt-8 text-black">
+          <button id="btn-depsite"
+            class="bg-blue-800 px-6 py-2 text-white rounded-lg block mt-4 hover:bg-blue-950 duration-300">Depsite</button>
+        </div>
+        <div class="bg-violet-400 p-8 rounded-lg text-white ">
+          <h3 class="text-4xl">Your withdraw</h3>
+          <input type="text" id="withdraw-field" placeholder="Amount you want to withdraw"
+            class="p-2 w-3/4 rounded-md mt-8 text-black">
+          <button id="btn-withdraw"
+            class="bg-blue-800 px-6 py-2 text-white rounded-lg block mt-4 hover:bg-blue-950 duration-300">Withdraw</button>
+
+        </div>
+
+
+      </div>
+    </section>
+  </main>
+
+
+
+  <!-- js file  -->
+  <script src="./js/utilities.js"></script>
+  <script src="./js/depsite.js"></script>
+  <script src="./js/withdraw.js"></script>
+</body>
+
+</html>
