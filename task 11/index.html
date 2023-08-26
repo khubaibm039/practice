@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- tailwind & daisyUI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+
+  <section class="grid place-content-center min-h-screen">
+    <div class="card w-96 h-[400px] bg-base-100 shadow-xl ">
+      <figure>
+        <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" />
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title">
+          Shoes!
+          <div class="badge badge-secondary">NEW</div>
+        </h2>
+        <p>If a dog chews shoes whose shoes does he choose?</p>
+        <h3 class="font-extrabold text-2xl">Price : 1000</h3>
+        <div class="flex items-center ">
+          <h3 class=" font-bold text-2xl">Coupon:</h3>
+          <input id="coupon-text" type="text" placeholder="Type here" class="input input-bordered" />
+        </div>
+        <!-- Open the modal using ID.showModal() method -->
+        <button id="apply-btn" class="btn btn-primary" onclick="my_modal_2.showModal()">Apply</button>
+        <dialog id="my_modal_2" class="modal">
+          <form method="dialog" class="modal-box">
+            <h3 class="font-bold text-lg">Hello!</h3>
+            <p class="py-4">Please pay: <span id="discount">1000</span> taka</p>
+          </form>
+          <form method="dialog" class="modal-backdrop">
+            <button>close</button>
+          </form>
+        </dialog>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- js file -->
+  <script src="./js/js.js"></script>
+
+</body>
+
+</html>
