@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="aqua">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Text Editor</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://kit.fontawesome.com/8c648e47d1.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="./img/web-design.png" />
+</head>
+
+<body>
+    <main>
+        <section class="min-h-[600px] mt-8 w-9/12 mx-auto bg-blue-400 rounded-lg pb-10">
+            <h3 class="text-center text-4xl py-4">My Text Editor</h3>
+            <div class="border border-black w-9/12 mx-auto min-h-[500px] bg-blue-300 rounded-lg">
+                <div class="  flex justify-between p-5 items-center">
+                    <div class="flex gap-5">
+                        <i id="text-bold" class="fa-solid fa-b cursor-pointer p-2 rounded-md"></i>
+                        <i id="text-italic" class="fa-solid fa-italic cursor-pointer p-2 rounded-md"></i>
+                        <i id="text-underline" class="fa-solid fa-underline cursor-pointer p-2 rounded-md"></i>
+                    </div>
+                    <div class="flex gap-5">
+                        <i id="align-left" class="fa-solid fa-align-left cursor-pointer p-2 rounded-md"></i>
+                        <i id="align-center" class="fa-solid fa-align-center cursor-pointer p-2 rounded-md"></i>
+                        <i id="align-right" class="fa-solid fa-align-right cursor-pointer p-2 rounded-md"></i>
+                    </div>
+                    <div class="flex items-center h-6 gap-2 rounded-md">
+                        <input id="font-size" type="number" value="18" class="h-6 w-10 rounded-md cursor-pointer ">
+                        <img id="text-transform" src="./img/font.png" alt="" class="h-6 w-6 cursor-pointer rounded-md">
+                        <input type="color" id="color-picker" class="rounded-md "><br>
+                    </div>
+                </div>
+                <div class="border border-black mx-7"></div>
+                <div class="m-7 h-[400px] "><textarea name="" id="text-field"
+                        class="w-full h-full p-2 rounded-lg "></textarea>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- js file -->
+    <script src="./js/js.js"></script>
+</body>
+
+</html>
