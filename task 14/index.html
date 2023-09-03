@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Universe</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <header class="py-12 text-center">
+        <h3 class="text-5xl">AI Universe Hub</h3>
+    </header>
+    <!-- my_modal.showModal() -->
+    <main class="container mx-auto">
+        <section class="">
+            <div id="card-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+            </div>
+            <!-- You can open the modal using ID.showModal() method -->
+
+            <dialog id="my_modal" class="modal ">
+                <form method="dialog" class="w-9/12 mx-auto ">
+                    <button class="btn btn-sm btn-circle btn-primary absolute right-2 top-2 ">✕</button>
+                    <div id="show-details">
+
+                    </div>
+
+                </form>
+
+            </dialog>
+
+        </section>
+
+        <div class="flex justify-center">
+            <button id="btn" class="btn btn-active btn-accent my-10 hidden ">show more</button>
+        </div>
+
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="./js/ai.js"></script>
+</body>
+
+</html>
